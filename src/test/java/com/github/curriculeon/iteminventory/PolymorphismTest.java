@@ -1,6 +1,7 @@
 package com.github.curriculeon.iteminventory;
 
 import com.github.curriculeon.GenericInventory;
+import com.github.curriculeon.ItemInventory;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -14,7 +15,7 @@ public class PolymorphismTest {
     @Test
     public void test() {
         // given
-        GenericInventory inventory = new GenericInventory();
+        GenericInventory inventory = new ItemInventory();
 
         // when
         Boolean isIterable = inventory instanceof Iterable;
